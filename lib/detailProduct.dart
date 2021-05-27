@@ -4,7 +4,9 @@ import 'product.dart';
 
 class DetailProductPage extends StatelessWidget {
   final Product product;
+
   DetailProductPage({this.product});
+
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -78,7 +80,7 @@ class DetailProductPage extends StatelessWidget {
                             height: 5,
                             width: 50,
                             decoration: BoxDecoration(
-                              color: Colors.purple,
+                              color: Colors.red,
                               borderRadius: BorderRadius.circular(18),
                             ),
                           ),
@@ -110,11 +112,11 @@ class DetailProductPage extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: <Widget>[
                             Text(
-                              "Rp. ${product.price}",
+                              " ${product.price}",
                               style: GoogleFonts.lato(
                                 textStyle: TextStyle(
                                   fontSize: 23,
-                                  color: Colors.purpleAccent,
+                                  color: Colors.redAccent,
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
@@ -130,27 +132,27 @@ class DetailProductPage extends StatelessWidget {
                                 ),
                                 Row(
                                   mainAxisAlignment:
-                                  MainAxisAlignment.spaceAround,
+                                      MainAxisAlignment.spaceAround,
                                   children: <Widget>[
                                     Icon(
                                       Icons.star,
-                                      color: Colors.purpleAccent,
+                                      color: Colors.redAccent,
                                     ),
                                     Icon(
                                       Icons.star,
-                                      color: Colors.purpleAccent,
+                                      color: Colors.redAccent,
                                     ),
                                     Icon(
                                       Icons.star,
-                                      color: Colors.purpleAccent,
+                                      color: Colors.redAccent,
                                     ),
                                     Icon(
                                       Icons.star_half,
-                                      color: Colors.purpleAccent,
+                                      color: Colors.redAccent,
                                     ),
                                     Icon(
                                       Icons.star_border,
-                                      color: Colors.purpleAccent,
+                                      color: Colors.redAccent,
                                     ),
                                   ],
                                 )
@@ -202,27 +204,7 @@ class DetailProductPage extends StatelessWidget {
               },
             ),
           ),
-          floatingActionButton: FloatingActionButton.extended(
-            backgroundColor: Colors.purple,
-            label: Container(
-              width: 150,
-              height: 50,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: <Widget>[
-                  Text(
-                    "Add to cart",
-                    style: TextStyle(
-                      color: Colors.white,
-                    ),
-                  ),
-                  Icon(Icons.shopping_cart, color: Colors.white)
-                ],
-              ),
-            ),
-            onPressed: () {},
           ),
-        ),
       ],
     );
   }

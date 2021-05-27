@@ -10,11 +10,11 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("Gaming Shop",
+          title: Text("GameOver",
               style: GoogleFonts.arvo(
                 textStyle: TextStyle(
                   fontWeight: FontWeight.w600,
-                  color: Colors.purpleAccent[200],
+                  color: Colors.redAccent[200],
                 ),
               )),
           actions: <Widget>[
@@ -44,14 +44,14 @@ class MyHomePage extends StatelessWidget {
                         padding: EdgeInsets.only(right: 15),
                         child: Chip(
                           backgroundColor: Colors.white,
-                          shadowColor: Colors.purpleAccent,
+                          shadowColor: Colors.redAccent,
                           labelPadding: EdgeInsets.fromLTRB(12, 6, 12, 6),
                           label: Text(
                             categories.name,
                             style: GoogleFonts.nunito(
                               fontWeight: FontWeight.w700,
                               textStyle: TextStyle(
-                                color: Colors.purpleAccent,
+                                color: Colors.redAccent,
                               ),
                             ),
                           ),
@@ -76,9 +76,9 @@ class MyHomePage extends StatelessWidget {
                         "Best Deals",
                         style: GoogleFonts.nunito(
                             textStyle: TextStyle(
-                              fontSize: 24,
-                              fontWeight: FontWeight.bold,
-                            )),
+                          fontSize: 24,
+                          fontWeight: FontWeight.bold,
+                        )),
                       ),
                       CircleAvatar(
                         radius: 20,
@@ -104,7 +104,7 @@ class MyHomePage extends StatelessWidget {
                   scrollDirection: Axis.vertical,
                   itemBuilder: (BuildContext context, int index) {
                     final product = dummyProduct[index];
-//!add on tap function using InkWell Widget or GestureDetector Widget
+
                     return InkWell(
                       onTap: () {
                         Navigator.push(
@@ -112,8 +112,8 @@ class MyHomePage extends StatelessWidget {
                           MaterialPageRoute(
                             builder: (BuildContext context) =>
                                 DetailProductPage(
-                                  product: product,
-                                ),
+                              product: product,
+                            ),
                           ),
                         );
                       },
@@ -163,13 +163,13 @@ class MyHomePage extends StatelessWidget {
                                     //!just copy and paste
                                     SizedBox(
                                       child: Text(
-                                        "Rp. ${product.price}",
+                                        " ${product.price}",
                                         overflow: TextOverflow.ellipsis,
                                         style: GoogleFonts.lato(
                                           textStyle: TextStyle(
                                             fontSize: 15,
                                             fontWeight: FontWeight.w500,
-                                            color: Colors.purpleAccent,
+                                            color: Colors.redAccent,
                                           ),
                                         ),
                                       ),
@@ -182,7 +182,7 @@ class MyHomePage extends StatelessWidget {
                                 height: 100,
                                 alignment: Alignment.center,
                                 decoration: BoxDecoration(
-                                  color: Colors.purpleAccent,
+                                  color: Colors.redAccent,
                                   borderRadius: BorderRadius.only(
                                     topRight: Radius.circular(16),
                                     bottomRight: Radius.circular(16),
@@ -263,22 +263,22 @@ class PopularProduct extends StatelessWidget {
                   maxLines: 2,
                   style: GoogleFonts.lato(
                       textStyle: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.w600,
-                      )),
+                    fontSize: 20,
+                    fontWeight: FontWeight.w600,
+                  )),
                 ),
               ),
               SizedBox(
                 width: 195,
                 child: Text(
-                  "Rp. ${product.price}",
+                  " ${product.price}",
                   overflow: TextOverflow.ellipsis,
                   style: GoogleFonts.lato(
                       textStyle: TextStyle(
-                        fontSize: 15,
-                        fontWeight: FontWeight.w600,
-                        color: Colors.purpleAccent,
-                      )),
+                    fontSize: 15,
+                    fontWeight: FontWeight.w600,
+                    color: Colors.redAccent,
+                  )),
                 ),
               ),
             ],

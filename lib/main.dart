@@ -8,14 +8,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Gaming Shop',
+      title: 'Gameover',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         brightness: Brightness.dark,
-        primarySwatch: Colors.purple,
+        primarySwatch: Colors.red,
       ),
       home: MyHomePage(),
     );
   }
 }
-

@@ -1,13 +1,14 @@
 class Categories {
   final String name;
+
   Categories({this.name});
 }
 
 List<Categories> dummyCategories = [
-  Categories(name: "Mouse"),
-  Categories(name: "Keyboard"),
-  Categories(name: "PC Gaming"),
-  Categories(name: "Gaming Chair"),
-  Categories(name: "Mouse Pad"),
-  Categories(name: "Headset"),
+  Categories(name: "Игровые мыши"),
+  Categories(name: "Игровые клавиатуры"),
+  Categories(name: "Игровые ноутбуки"),
+  Categories(name: "Игровое Кресло"),
+  Categories(name: "Коврики для мыши игровые"),
+  Categories(name: "Наушники игровые "),
 ];
